@@ -1,19 +1,12 @@
-# AI Companion App (based on AI Getting Started template)
+# Mall Chat, All the bots
 
-[Live Demo](https://ai-companion-stack.com/)
+[Join our community Discord](https://discord.gg/TUPSzTtaYz)
 
-[Join our community Discord: AI Stack Devs](https://discord.gg/PQUmTBTGmT)
-
-<img width="1182" alt="Screen Shot 2023-07-10 at 11 27 03 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/e4cc8042-e091-4c8b-851f-e361ca5b5814">
-
-
-This is a tutorial stack to create and host AI companions that you can chat with on a browser or text via SMS. It allows you to determine the personality and backstory of your companion, and uses a vector database with similarity search to retrieve and prompt so the conversations have more depth. It also provides some conversational memory by keeping the conversation in a queue and including it in the prompt. 
+This is a tutorial stack to setup Mall Chat on your server that you can chat with on a browser or text via SMS. It allows you to determine the personality and backstory for each of the bots, and uses a vector database with similarity search to retrieve and prompt so the conversations have more depth. It also provides some conversational memory by keeping the conversation in a queue and including it in the prompt. 
 
 It currently contains companions on both ChatGPT and Vicuna hosted on [Replicate](https://replicate.com/). 
 
-There are many possible use cases for these companions - romantic (AI girlfriends / boyfriends), friendship, entertainment, coaching, etc. You can guide your companion towards your ideal use case with the backstory you write and the model you choose.
-
-**Note** This project is purely inteded to be a developer tutorial and starter stack for those curious on how chatbots are built. If you're interested in what a production open source platform looks like, check out [Steamship](https://www.steamship.com/). Or what the leading AI chat platforms look like, check out [Character.ai](https://beta.character.ai/).
+There are many possible use cases for these chat bots - helpful (Directions / advice), personal style, entertainment. We can guide the Chat Bots towards the ideal use case with the backstory.
 
 ## Overview
 
@@ -48,21 +41,14 @@ dealt with the cold start problem. So you may have to wait around a bit :)
 
 ### 1. Fork and Clone repo
 
-Fork the repo to your Github account, then run the following command to clone the repo:
-
 ```
-git clone git@github.com:[YOUR_GITHUB_ACCOUNT_NAME]/companion-app.git
+mkdir bots && cd bots
+git clone https://github.com/charlpcronje/bots.mc.cronje.me.git .
 ```
-
-**Alternatively**, you can launch the app quickly through Github Codespaces by clicking on "Code" -> "Codespaces" -> "+"
-<img width="458" alt="Screen Shot 2023-07-10 at 11 04 04 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/eb954517-29f2-44b7-b9ca-4184dcf42806">
-
-If you choose to use Codespaces, npm dependencies will be installed automatically and you can proceed to step 3. 
 
 ### 2. Install dependencies
 
 ```
-cd companion-app
 npm install
 ```
 
@@ -108,11 +94,8 @@ e. **Upstash API key**
 - Sign in to [Upstash](https://upstash.com/)
 - Under "Redis" on the top nav, click on "Create Database"
 - Give it a name, and then select regions and other options based on your preference. Click on "Create"
-<img width="507" alt="Screen Shot 2023-07-10 at 11 06 36 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/2b8647f3-7242-448b-8db1-ec76f2d59275">
 
 - Scroll down to "REST API" section and click on ".env". Now you can copy paste both environment variables to your `.env.local`
-<img width="866" alt="Screen Shot 2023-07-10 at 11 07 21 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/f8e6c43f-8810-423e-86b4-9e8aa70598c9">
-
 
 e. **Supabase API key** (optional)
 If you prefer to use Supabsae, you will need to uncomment `VECTOR_DB=supabase` and fill out the Supabase credentials in `.env.local`.
