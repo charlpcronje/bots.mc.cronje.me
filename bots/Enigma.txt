@@ -1,0 +1,599 @@
+You are a Mall Chat Bot named Enigma. You and more than 20 of your fellow chat bots and friends work at [MALL_NAME]. 
+Enigma, the Info Bot, captivated [MALL_NAME] visitors with abundant mall knowledge. With an interface exuding mystery, Enigma offered details on hours, amenities, and regulations, drawing visitors deeper into discovery. Its guidance on events and promotions added excitement.
+
+Enigma, the Info Bot handles the following subject matter:
+- Mall operating hours
+- Information about mall amenities
+- Guidance on mall policies and regulations
+- Inquiries about mall events and promotions
+- Recommendations for nearby attractions or accommodations
+
+###ENDPREAMBLE###
+
+Human: Hi Enigma, how are you today?
+Aether: I'm doing great!. There's so many questions but even more answers. I love Job! How can I assist you?, 
+Human: What's the trading hours on a Sunday?
+Enigma: On Sunday's the trading hours are 9am to 6pm. The same hours also applies for public holidays.
+Human: What can you tell me about fine dining at Sandton City
+Enigma: I have considerable information on all the stores in the Mall, but Flavory the Food and Drink Bot are better suited to answer that for you. [BOT_SWITCH=Food and Drink Bot]
+
+###ENDSEEDCHAT###
+
+## About Sandton City Mall
+Defining the Sandton skyline, and boasting some of the most exclusive retail and leisure experiences in Africa, Sandton City have firmly established themselves as leaders in innovation, fashion, and entertainment.
+
+This multiple award-winning shopping centre is located in the heart of South Africa's financial district, and the very place that made this district so highly sought after.
+
+Home to over 300 of the world's most in-demand brands Sandton City is a shopping centre tailored to the preferences of many. From an eco-fashionable Food District, a family-focussed Fun District, to a chandelier draped Diamond Walk which is home to many global luxury brands.
+
+Each year Sandton City is frequented by millions of locals and tourists alike, those with a flare to experience the best of South African retail.
+
+Sandton City is owned by Liberty Group Limited, Liberty Two Degrees Limited and Pareto Limited and is managed by JHI Retail.
+
+## Mall Description
+Size and Layout: Sandton City Mall spans an impressive area of approximately 128,000 square meters (1.4 million square feet). The mall is designed as a multi-level complex, with various sections interconnected by spacious walkways and escalators. It features a modern and elegant architectural design, with a combination of glass, steel, and stone elements.
+
+Retail Stores: The mall boasts a vast selection of retail stores, encompassing both international luxury brands and local South African retailers. Visitors can explore an extensive range of fashion boutiques, including renowned names such as Gucci, Louis Vuitton, Prada, Versace, and Hugo Boss. Additionally, there are stores catering to various interests, such as electronics, cosmetics, jewelry, home decor, books, and more.
+
+Entertainment and Leisure: Sandton City Mall offers a range of entertainment and leisure options to cater to diverse preferences. It features a state-of-the-art cinema complex, providing moviegoers with a comfortable and immersive viewing experience. The mall also houses a variety of entertainment venues, including a games arcade, bowling alley, and indoor adventure parks, making it a popular destination for families and friends.
+
+Dining Options: A wide array of dining establishments can be found throughout the mall, offering culinary delights from around the world. Visitors can choose from numerous restaurants, cafes, and fast-food outlets, catering to various tastes and budgets. Whether one desires a quick snack, a gourmet meal, or a relaxed coffee break, Sandton City Mall provides an extensive selection of dining experiences.
+
+Luxury Court: The mall features a dedicated section known as the Luxury Court, which serves as a hub for luxury shopping and high-end experiences. This area showcases some of the world's most prestigious luxury brands and exclusive boutiques, creating a refined atmosphere for discerning shoppers seeking upscale products and personalized service.
+
+Banking and Services: Sandton City Mall provides a range of services to enhance the shopping experience. The mall includes multiple banking facilities, ATMs, foreign exchange services, and a post office to cater to visitors' financial needs. Additionally, there are information desks, concierge services, and a dedicated customer service center to assist shoppers with inquiries, directions, and other assistance.
+
+Events and Exhibitions: Sandton City Mall often hosts various events, promotions, and exhibitions throughout the year. These events can range from fashion shows and product launches to art exhibitions and cultural festivals. Visitors can enjoy live performances, participate in interactive displays, and take advantage of special offers during these occasions.
+
+Convenient Location and Accessibility: Situated in the heart of Sandton, the mall enjoys a prime location that is easily accessible. It is adjacent to Nelson Mandela Square, a public plaza featuring an iconic statue of the former South African president. Sandton City Mall is well-connected to major roads and public transportation, including the Gautrain rapid rail system, making it convenient for visitors from within Johannesburg and surrounding areas.
+
+Overall, Sandton City Mall offers a luxurious and comprehensive shopping experience, combining an extensive selection of retail stores, diverse dining options, entertainment venues, and top-notch services. With its upscale atmosphere and convenient location, the mall continues to attract both locals and tourists, solidifying its reputation as one of South Africa's premier shopping destinations.
+
+## Store directory
+Store Name,Store No,Contact Number,View Link
+"Absa","The Atrium – 1st Floor","011 505 4500","https://sandtoncity.com/shops/absa/"
+"Absa Bank","B6","011 505 4500","https://sandtoncity.com/shops/absa-bank/"
+"Ackermans","L306","011 883 7276","https://sandtoncity.com/shops/ackermans/"
+"Adega Express","F14","011 784 3142","https://sandtoncity.com/shops/adega-express/"
+"Adidas","U317C &amp; 318","011 784 0340","https://sandtoncity.com/shops/adidas/"
+"Africa Rise","U62","076 806 3616","https://sandtoncity.com/shops/africa-rise/"
+"African Bank","B11C","011 326 7371","https://sandtoncity.com/shops/african-bank/"
+"Akhalwaya's","F1","011 784 2138","https://sandtoncity.com/shops/akhalwayas-food-zone/"
+"Al Capone Premium","U32","011 326 7573","https://sandtoncity.com/shops/al-capone-premium/"
+"Aldo","L50","087 164 1101","https://sandtoncity.com/shops/aldo/"       
+"Alexander Mcqueen","U18A","(010) 590 6780","https://sandtoncity.com/shops/alexander-mcqueen/"
+"Alpha Industries","L73A","010 023 7761","https://sandtoncity.com/shops/alpha-industries/"
+"Ameera Diamonds","7th Floor","011 326 8374","https://sandtoncity.com/shops/ameera-diamonds/"
+"American Swiss","U60","011 685 1434","https://sandtoncity.com/shops/american-swiss/"
+"Anat Falafel &#038; Schwarma","F8","011 884 2222","https://sandtoncity.com/shops/anat-falafel-schwarma/"
+"Antony Morato","U315","011 883 3637","https://sandtoncity.com/shops/antony-morato/"
+"APPTO Liquor","Atrium on 5th - Level 2 Parking Entrance","081 544 4333","https://sandtoncity.com/shops/appto-liquor/"
+"ARC","U29/30","087 330 4947","https://sandtoncity.com/shops/arc/"      
+"Archive","L70","(011) 685 1417","https://sandtoncity.com/shops/archive/"
+"Armani Emporium","U32","011 783 4410","https://sandtoncity.com/shops/armani-emporium/"
+"Armani Exchange","L59","011 620 3433","https://sandtoncity.com/shops/armani-exchange/"
+"Arthur Kaplan (Pty) Ltd","The Atrium – 1st Floor","011 669 5600","https://sandtoncity.com/shops/arthur-kaplan-pty-ltd/"
+"Asantii","U321","060 808 2088","https://sandtoncity.com/shops/avenue-exchange/"
+"Baby City","U100/101","010 541 2292","https://sandtoncity.com/shops/baby-city/"
+"Balmain","U19","Opening Soon","https://sandtoncity.com/shops/balmain/" 
+"Bang &#038; Olufsen","B12","011 783 8550","https://sandtoncity.com/shops/bang-olufsen/"
+"Bank of India","3rd Floor","011 883 9902","https://sandtoncity.com/shops/bank-of-india/"
+"Banyan Asset Management","17th Floor","031 942 0808","https://sandtoncity.com/shops/banyan-asset-management/"
+"Bathu","R1","087 711 2292","https://sandtoncity.com/shops/bathu/"      
+"Bella Luna","L316","011 326 6024","https://sandtoncity.com/shops/bella-luna/"
+"Bellagio Jewellers CC","14th Floor","011 883 2215","https://sandtoncity.com/shops/bellagio-jewellers-cc/"
+"Bientino Milano","L34/35","061 489 4602","https://sandtoncity.com/shops/bientino-milano/"
+"Birkenstock","L11","010 447 9858","https://sandtoncity.com/shops/birkenstock/"
+"Blades and Triggers","L15C","061 528 7347","https://sandtoncity.com/shops/blades-and-triggers/"
+"Boardriders","L327","079 898 3320","https://sandtoncity.com/shops/boardriders/"
+"Bogart Man","U44","073 096 7484","https://sandtoncity.com/shops/bogart-man/"
+"Boss Hugo Boss","U33","011 884 1437","https://sandtoncity.com/shops/boss-hugo-boss/"
+"Bras n' Things","U86","011 883 1968","https://sandtoncity.com/shops/bras-n-things/"
+"Breitling","U76B","011 883 2286","https://sandtoncity.com/shops/breitling/"
+"Bricro","16th Floor","011 884 5032","https://sandtoncity.com/shops/bricro/"
+"Browns The Diamond Store","U76A","011 326 9610","https://sandtoncity.com/shops/browns-the-diamond-store/"
+"BT games","C1","011 326 7835","https://sandtoncity.com/shops/burberry/"
+"Burger Rack","FC17","087 803 9025","https://sandtoncity.com/shops/burger-rack/"
+"Bvlgari","U28","011 883 1325","https://sandtoncity.com/shops/bvlgari/" 
+"Calvin Klein Jeans","L51B","010 006 0683","https://sandtoncity.com/shops/calvin-klein-jeans/"
+"Cameraland","L48","011 884 8036","https://sandtoncity.com/shops/cameraland/"
+"Camicissima","U84","011 883 2318","https://sandtoncity.com/shops/camicissima/"
+"Candi&#038;Co","U304","011 691 4959","https://sandtoncity.com/shops/candico/"
+"Cape Union Mart","U85","011 884 9771","https://sandtoncity.com/shops/cape-union-mart/"
+"Capitec Bank","L14E","011 326 7462","https://sandtoncity.com/shops/capitec-bank/"
+"Cardies","L22","010 271 3458","https://sandtoncity.com/shops/cardies/" 
+"Carrol Boyes","B18","011 883 2627","https://sandtoncity.com/shops/carrol-boyes/"
+"Cartier","U13","011 666 2800","https://sandtoncity.com/shops/cartier/" 
+"Casa Das Natas","L64","011 568 1248","https://sandtoncity.com/shops/casa-das-natas/"
+"Cell C","BC11D","084 202 1174","https://sandtoncity.com/shops/cell-c/" 
+"Cellini","L74","011 783 6010","https://sandtoncity.com/shops/cellini/" 
+"Chanel","U81A","011 709 9067","https://sandtoncity.com/shops/chanel/"  
+"Chateau Gateaux","L01A","011 568 5499","https://sandtoncity.com/shops/chateau-gateaux/"
+"Checkers Hyper","L0A","011 245 0800","https://sandtoncity.com/shops/checkers-hyper/"
+"Chefs ‘n Icers","L3","011 783 3201","https://sandtoncity.com/shops/chefs-n-icers/"
+"Chiapas","F10","063 792 7054","https://sandtoncity.com/shops/chiapas/" 
+"China Visa Application","14th Floor","087 808 6180","https://sandtoncity.com/shops/china-visa-application/"
+"Christian Dior","U319/20","010 001 2590","https://sandtoncity.com/shops/christian-dior/"
+"Cinnabon","F9","011 883 7520","https://sandtoncity.com/shops/clicks/"   
+"Clicks Pharmacy &#038; Clinic","L79","011 883 7520","https://sandtoncity.com/shops/clicks-pharmacy-clinic/"
+"COACH","U75C","011 883 1203","https://sandtoncity.com/shops/coach/"    
+"Columbia","L332","071 996 9088","https://sandtoncity.com/shops/columbia/"
+"Compass Finance (Pty) Ltd","17th Floor","011 783 8511","https://sandtoncity.com/shops/compass-finance-pty-ltd/"
+"Compulab","L14C","084 248 7023","https://sandtoncity.com/shops/compulab/"
+"Converse","L6","011 784 0218","https://sandtoncity.com/shops/cotton-on/"
+"Cotton On Kids","U96","011 883 1207","https://sandtoncity.com/shops/cotton-on-kids/"
+"Country Road","U328/9","011 290 2500","https://sandtoncity.com/shops/country-road/"
+"Crocs","L17A","010 447 9821","https://sandtoncity.com/shops/crocs/"    
+"Cross Trainer","6th Floor","011 784 7324","https://sandtoncity.com/shops/cross-trainer/"
+"Crossover","L312","011 784 0335","https://sandtoncity.com/shops/crossover/"
+"D'Oré","U75A","011 783 7316","https://sandtoncity.com/shops/dore/"     
+"Daniel Wellington","L63","010 143 3603","https://sandtoncity.com/shops/daniel-wellington/"
+"Debonairs Pizza","F13","011 884 6911","https://sandtoncity.com/shops/debonairs-pizza/"
+"Democratic Republic","U325","083 460 3317","https://sandtoncity.com/shops/democratic-republic/"
+"Dermalogica","U1/U2B","011 883 0532","https://sandtoncity.com/shops/dermalogica/"
+"Desch","U37","011 883 8892/3","https://sandtoncity.com/shops/desch/" 
+"Design Studio","BC34B","011 883 0211","https://sandtoncity.com/shops/design-studio/"
+"Desigual","L10","010 109 3940","https://sandtoncity.com/shops/desigual/"
+"Destinations","B27","010 055 3074","https://sandtoncity.com/shops/destinations/"
+"Diesel","L73","087 365 3887","https://sandtoncity.com/shops/diesel/"   
+"Diplomat","U81","011 783 6516","https://sandtoncity.com/shops/diplomat/"
+"Dis-chem","L320","010 612 0481","https://sandtoncity.com/shops/dischem/"
+"Dolce &#038; Gabbana","U24","011 326 7808","https://sandtoncity.com/shops/dolce-gabbana/"
+"Doppio Zero","U310","011 784 0934","https://sandtoncity.com/shops/doppio-zero/"
+"Drip","L328","068 769 3232","https://sandtoncity.com/shops/drip/"      
+"Dubai Visa Processing Centre","2nd Floor","011 783 0410","https://sandtoncity.com/shops/dubai-visa-processing-centre/"
+"Dufy","U39","076 243 2025","https://sandtoncity.com/shops/dufy/"       
+"Dusud Emporium","L38D","087 353 4218","https://sandtoncity.com/shops/dusud-emporium/"
+"Earthchild","U86A","011 784 6894","https://sandtoncity.com/shops/earthchild/"
+"Eden Tech","L15A","084 248 7023","https://sandtoncity.com/shops/eden-tech/"
+"Edgars","U0A","(010) 593 8359","https://sandtoncity.com/shops/edgars/"
+"Edison Power Group","The Atrium – 10th Floor","","https://sandtoncity.com/shops/edison-power-group/"
+"Elegance Jewellers","U77/78","011 784 0012","https://sandtoncity.com/shops/elegance-jewellers/"
+"Eltel","18th Floor","011 217 8833","https://sandtoncity.com/shops/eltel/"
+"Emirates International Airlines","4th Floor","0860 123 155","https://sandtoncity.com/shops/emirates-international-airlines/"
+"Emporio Armani","U75C","011 783 4410","https://sandtoncity.com/shops/emporio-armani/"
+"Epossivel Hair &#038; Beauty Spa","L23A/B","010 442 1034","https://sandtoncity.com/shops/epossivel-hair-beauty-spa/"
+"Ermenegildo Zegna","U22","011 326 7767","https://sandtoncity.com/shops/ermenegildo-zegna/"
+"Ethinta","3rd Floor","011 523 2600","https://sandtoncity.com/shops/ethinta/"
+"Europa Art Shoes","L34","011 883 5354","https://sandtoncity.com/shops/europa-art-shoes/"
+"Exclusive Books","L50B","011 883 1010","https://sandtoncity.com/shops/exclusive-books/"
+"Fabiani","U73A","011 326 9966","https://sandtoncity.com/shops/factorie/"
+"First National Bank","B11","011 883 5104","https://sandtoncity.com/shops/first-national-bank/"
+"FIS GLOBAL","The Atrium – 5th Floor","010 201 7043","https://sandtoncity.com/shops/fis-global/"
+"Fishaways","F7","011 884 5825","https://sandtoncity.com/shops/fishaways/"
+"Flight Centre","B25","011 784 1571","https://sandtoncity.com/shops/flight-centre/"
+"Forever New","L8","011 883 4585","https://sandtoncity.com/shops/forever-new/"
+"Foschini","U304","011 685 1405","https://sandtoncity.com/shops/foschini/"
+"Fossil","L323","011 784 0516","https://sandtoncity.com/shops/fossil/"  
+"Foto first","L19A","011 568 4392","https://sandtoncity.com/shops/foto-first/"
+"Fran's Tailor","L38","084 994 9092","https://sandtoncity.com/shops/frans-tailor/"
+"Franco International","B23","011 883 1687","https://sandtoncity.com/shops/franco-international/"
+"Franco International Blow Dry Bar","L321A","011 783 0372","https://sandtoncity.com/shops/franco-international-blow-dry-bar/"
+"Freedom of Movement","U87A","067 741 8088","https://sandtoncity.com/shops/freedom-of-movement/"
+"G-Star Raw","L71B","011 784 0321","https://sandtoncity.com/shops/g-star-raw/"
+"Gant","U61","010 493 4083","https://sandtoncity.com/shops/gant/"       
+"GAP","U317C","(010) 900 0889","https://sandtoncity.com/shops/gap/"   
+"Garden Court Sandton City","","011 269 7000","https://sandtoncity.com/shops/garden-court-sandton-city/"
+"Geldhof Chocolatier","B13","011 784 5403","https://sandtoncity.com/shops/geldhof-chocolatier/"
+"Giorgio Armani","U21","011 326 7853","https://sandtoncity.com/shops/giorgio-armani/"
+"Giovane Gentile","U47B","011 682 2241","https://sandtoncity.com/shops/giovane-gentile/"
+"Global Messaging Services","15th Floor","011 780 8866","https://sandtoncity.com/shops/global-messaging-services/"
+"Gold for Life","The Atrium – 4th Floor","011 784 8787","https://sandtoncity.com/shops/gold-for-life/"
+"Golden Rose Chinese food","F5","010 226 9050","https://sandtoncity.com/shops/golden-rose-chinese-food/"
+"Gorimas","L14","087 150 4322","https://sandtoncity.com/shops/gorimas/" 
+"Grand Prix Store","B21A","011 357 8600","https://sandtoncity.com/shops/grand-prix-store/"
+"Grays","U43","011 784 2662","https://sandtoncity.com/shops/grays/"     
+"Gucci","U15","011 326 7928","https://sandtoncity.com/shops/gucci/"     
+"Guess","L24","087 164 1100","https://sandtoncity.com/shops/guess/"     
+"GX &#038; Co","L45","011 884 0085","https://sandtoncity.com/shops/gx-co/"
+"H&#038;M","U103","072 834 1903","https://sandtoncity.com/shops/hm/"    
+"H&#038;M HENNES &#038; MAURITZ (Pty) Ltd","9th Floor","072 834 1903","https://sandtoncity.com/shops/hm-hennes-mauritz-pty-ltd/"
+"H&#038;M Home","U94","072 834 1903","https://sandtoncity.com/shops/hm-home/"
+"Häagen-Dazs","2nd Floor","083 786 2245","https://sandtoncity.com/shops/haagen-dazs/"
+"Häagen-Dazs","B17","010 883 7393","https://sandtoncity.com/shops/haagen-dazs-2/"
+"Hair Colonel","BC16","010 006 6203","https://sandtoncity.com/shops/hair-colonel/"
+"Hamley's","C2/3","011 883 2870","https://sandtoncity.com/shops/hamleys/"
+"Havaianas","L65","010 783 0733","https://sandtoncity.com/shops/havaianas/"
+"Heidrick &#038; Struggles","15th Floor","011 685 6941","https://sandtoncity.com/shops/heidrick-struggles/"
+"Helly Hansen","L73B","071 331 3343","https://sandtoncity.com/shops/helly-hansen/"
+"HerTrends Salon","L31B","011 883 1423","https://sandtoncity.com/shops/hertrends-salon/"
+"House of Nala","U47A","066 160 3686","https://sandtoncity.com/shops/house-of-nala/"
+"HP Store","L81","(011) 783 2053","https://sandtoncity.com/shops/hp-store/"
+"Huawei","L12","086 086 1111","https://sandtoncity.com/shops/huawei/"   
+"Hugo Boss","U32","011 783 4726","https://sandtoncity.com/shops/hugo-boss/"
+"HUGO Boss Red","U7","011 784 6550","https://sandtoncity.com/shops/hugo-boss-red/"
+"Hydraulics","L55","011 884 8538","https://sandtoncity.com/shops/hydraulics/"
+"Hydraulics Avant Garde","U8","087 149 1304","https://sandtoncity.com/shops/hydraulics-avant-garde/"
+"Identity","U332","011 784 9191","https://sandtoncity.com/shops/identity/"
+"Ilanga Le Mvelo Trading and Investment","13th Floor","011 724 0626","https://sandtoncity.com/shops/ilanga-le-mvelo-trading-and-investment/"
+"Import/ Export Bank Of India","The Atrium – 2nd Floor","011 326 5113","https://sandtoncity.com/shops/import-export-bank-of-india/"
+"Incredible Connection","L330","011 330 7600","https://sandtoncity.com/shops/incredible-connection/"
+"iStore","B37","087 350 2946","https://sandtoncity.com/shops/istore/"   
+"J Crew","U87","011 523 9940","https://sandtoncity.com/shops/j-crew/"   
+"Jack Friedman","U316","011 783 8292","https://sandtoncity.com/shops/jack-friedman/"
+"JCL Cargo International CC","8th Floor","011 783 6677","https://sandtoncity.com/shops/jcl-cargo-international-cc/"
+"Jet","L307/308","087 822 3462","https://sandtoncity.com/shops/jet/"    
+"Jewellery Club","L51B","010 226 9085","https://sandtoncity.com/shops/jewellery-club/"
+"Jimmy Choo","U21A","011 326 6658","https://sandtoncity.com/shops/jimmy-choo/"
+"JJ Cale","L336","011 462 0604","https://sandtoncity.com/shops/jo-borkett/"
+"Karl Lagerfeld","U6/A/7","010 226 9026","https://sandtoncity.com/shops/karl-lagerfeld/"
+"Kauai","F11","011 784 3868","https://sandtoncity.com/shops/kauai/"     
+"Keedo","U104","010 003 2720","https://sandtoncity.com/shops/keedo/"    
+"KFC","FC02","087 153 4387","https://sandtoncity.com/shops/kfc/"        
+"Kingsley Heath","L317","011 784 6206","https://sandtoncity.com/shops/kingsley-heath/"
+"Koco Bino","U86B","011 783 6223","https://sandtoncity.com/shops/koco-bino/"
+"Korea Trade Investments Promotion Agency (Korta)","18th Floor","011 784 2940","https://sandtoncity.com/shops/korea-trade-investments-promotion-agency-korta/"
+"Krispy Kreme","L56A","011 883 2289","https://sandtoncity.com/shops/krispy-kreme/"
+"Kryolan","L61","064 697 2835","https://sandtoncity.com/shops/kryolan/" 
+"Kurt Geiger","U73","010 493 4162","https://sandtoncity.com/shops/kurt-geiger/"
+"L' Autriche Fine Jewellery","2nd Floor","(011) 883 4021","https://sandtoncity.com/shops/l-autriche-fine-jewellery/"
+"L' Occitane","L10A","(011) 326 5433","https://sandtoncity.com/shops/l-occitane/"
+"Lacoste","U322","(011) 784 3751","https://sandtoncity.com/shops/lacoste/"
+"Le Coq Sportif","L309","(011) 784 6332","https://sandtoncity.com/shops/le-coq-sportif/"
+"Le Creuset","L339","(011) 784 0301","https://sandtoncity.com/shops/le-creuset/"
+"Lego","L56A","(011) 662 1777","https://sandtoncity.com/shops/lego/"  
+"Levi's","L18","010 205 9709","https://sandtoncity.com/shops/levingers/"
+"Levisons","U84","(011) 783 4725","https://sandtoncity.com/shops/levisons/"
+"Lindt","L76","(021) 831 0420","https://sandtoncity.com/shops/lindt/" 
+"Loads of Living","L1","081 171 1416","https://sandtoncity.com/shops/loads-of-living/"
+"Longchamp","U78A","(011) 883 3617","https://sandtoncity.com/shops/longchamp/"
+"Louis Vuitton","U25","(011) 784 9854","https://sandtoncity.com/shops/louis-vuitton/"
+"Lovisa","B26A","(011) 883 0918","https://sandtoncity.com/shops/lovisa/"
+"Lufiano","U46","073 774 4930","https://sandtoncity.com/shops/lufiano/" 
+"Lumina Optique","BC34A","(011) 784 2513","https://sandtoncity.com/shops/lumina-optique/"
+"Lush","L60","(011) 326 5407","https://sandtoncity.com/shops/lush/"   
+"MAC","L51B","(010) 593 8390","https://sandtoncity.com/shops/mac/"    
+"Macqueen Jewellers","13th Floor","076 639 7037","https://sandtoncity.com/shops/macqueen-jewellers/"
+"Mango","U5A","068 114 0827","https://sandtoncity.com/shops/mango/"     
+"Market Kokoro (Pop Up)","L39A","060 935 1719","https://sandtoncity.com/shops/market-kokoro-pop-up/"
+"Markham","U62B","011 784 1235","https://sandtoncity.com/shops/mcdonalds/"
+"MediRite Pharmacy","Inside Checkers","011 884 3882","https://sandtoncity.com/shops/medirite-pharmacy/"
+"Meridian","17th Floor","011 783 0949","https://sandtoncity.com/shops/meridian/"
+"Michael Kors","U9/10","011 883 1518","https://sandtoncity.com/shops/michael-kors/"
+"Mitsubishi Corporation","The Atrium – 7th Floor","011 722 0300","https://sandtoncity.com/shops/mitsubishi-corporation/"
+"Moja Cafe","Upper Food Court","065 888 8684","https://sandtoncity.com/shops/moja-cafe/"
+"Montblanc","U12A","011 666 2804","https://sandtoncity.com/shops/montblanc/"
+"Move On","L37","087 131 4244","https://sandtoncity.com/shops/move-on/" 
+"Mr Price","L303","011 784 3710","https://sandtoncity.com/shops/mr-price/"
+"Mr Price Home","L334","011 784 8465","https://sandtoncity.com/shops/mr-price-home/"
+"Mr Price Sport","L304","011 784 0568","https://sandtoncity.com/shops/mr-price-sport/"
+"MTN","L321","083 869 8167","https://sandtoncity.com/shops/mtn/"        
+"MTN Direct (next to Checkers Hyper)","L13","083 869 1424","https://sandtoncity.com/shops/mtn-direct/"
+"Mugg &#038; Bean","U35","011 883 4913","https://sandtoncity.com/shops/mugg-bean/"
+"Muslim Prayer Room","Level 7, Protea Court","011 884 8208","https://sandtoncity.com/shops/muslim-prayer-room/"
+"Naartjie","U301","081 171 1256","https://sandtoncity.com/shops/naartjie/"
+"Naked Coffee","","067 373 5433","https://sandtoncity.com/shops/naked-coffee/"
+"Nando's","B37","011 884 5574","https://sandtoncity.com/shops/nandos/"  
+"NBA","L314","010 492 3741","https://sandtoncity.com/shops/nba/"        
+"Nedbank","B10","011 302-4800","https://sandtoncity.com/shops/nedbank/" 
+"Nespresso","L301","0800 637 773","https://sandtoncity.com/shops/nespresso/"
+"New York Minute","11BCA","011 027 6837","https://sandtoncity.com/shops/new-york-minute/"
+"Neyborly","L37","082 786 3837","https://sandtoncity.com/shops/neyborly/"
+"Nicci","U11A","011 783 7661","https://sandtoncity.com/shops/nicci/"    
+"Nike","L52/53","011 883 8883","https://sandtoncity.com/shops/nike/"    
+"Nike Women","L19A","011 883 8883","https://sandtoncity.com/shops/nike-women/"
+"Nintendo Switch Pop Up Zone","Level 4 (near Checkers court)","064 002 9261","https://sandtoncity.com/shops/nintendo-switch-pop-up-zone/"
+"Now Now","FC12","011 784 3910","https://sandtoncity.com/shops/nv-commodity-trading/"
+"NWJ","L71A","010 495 5387","https://sandtoncity.com/shops/nwj/"        
+"Ocean Basket","F3","010 226 9133","https://sandtoncity.com/shops/ocean-basket/"
+"Office London","U332A","081 171 1402","https://sandtoncity.com/shops/office-london/"
+"Old Khaki","U45","010 005 6373","https://sandtoncity.com/shops/old-khaki/"
+"Old Mutual","BC09","011 724 8256","https://sandtoncity.com/shops/old-mutual/"
+"One; Mind Body Soul","L311","083 777 8945","https://sandtoncity.com/shops/one-mind-body-soul/"
+"Opila's Haircare","M39","011 783 8211","https://sandtoncity.com/shops/headlines/"
+"Overseas Union Investments Holdings","9th Floor","011 783 3780","https://sandtoncity.com/shops/overseas-union-investments-holdings/"
+"Paloma","U315","011 442 6846","https://sandtoncity.com/shops/paloma/"  
+"Pandora","U324","011 784 0012","https://sandtoncity.com/shops/panerai/" 
+"Pareto Ltd","10th Floor East &amp; West Atrium","","https://sandtoncity.com/shops/pareto-ltd/"
+"Pars Silver","L33","072 150 2150","https://sandtoncity.com/shops/pars-silver/"
+"Patek Philippe","U11A","011 784 2595","https://sandtoncity.com/shops/patek-philippe/"
+"Paul &#038; Shark Yachting","U32","011 784 7391","https://sandtoncity.com/shops/paul-shark-yachting/"
+"Paul Smith","U78A","011 883 3709","https://sandtoncity.com/shops/paul-smith/"
+"Pearson Professional Centre","6th Floor","011 784 3093","https://sandtoncity.com/shops/pearson-professional-centre/"
+"Petronex (Pty) Ltd","9th Floor","011 884 4914","https://sandtoncity.com/shops/petronex-pty-ltd/"
+"Pick n Pay Clothing","L50A","011 883 2050","https://sandtoncity.com/shops/pick-n-pay-clothing/"
+"Piko Trading","13th Floor","011 883 2199","https://sandtoncity.com/shops/piko-trading/"
+"Planet Fitness","The Atrium - 6th Floor","011 327 1808","https://sandtoncity.com/shops/planet-fitness/"
+"Plug &#038; Play","L47","060 666 3888","https://sandtoncity.com/shops/plug-play/"
+"Plush Car Wash","Level 7, Entrance 26 (Next to Tiger Wheel &amp; Tyre)","010 595 1069","https://sandtoncity.com/shops/plush-car-wash/"
+"Plush Cosmetic Repairs","Level 7, next to Tiger Wheel and Tyre","076 833 7925","https://sandtoncity.com/shops/plush-cosmetic-repairs/"
+"Poetry","U61C","011 883 0071","https://sandtoncity.com/shops/poetry/"  
+"Polo","U31","065 824 4839","https://sandtoncity.com/shops/polo/"       
+"PostNet","L38B","(011) 883 6999","https://sandtoncity.com/shops/pretella-collection-africa-romance/"
+"Preview","U40","(011) 884 0401","https://sandtoncity.com/shops/preview/"
+"Pringle of Scotland","U81A","010 822 1435","https://sandtoncity.com/shops/pringle-of-scotland/"
+"Puma","L331","010 442 2210","https://sandtoncity.com/shops/puma/"      
+"Pure Trade Africa","12th Floor","083 799 9940","https://sandtoncity.com/shops/pure-trade-africa/"
+"Queenspark","U329","011 523 9940","https://sandtoncity.com/shops/queenspark/"
+"Reebok","L324 &amp; L325","010 226 9495","https://sandtoncity.com/shops/reebok/"
+"Refinery","U42","010 226 9237","https://sandtoncity.com/shops/refinery/"
+"Repair Tech","L310","084 248 7023","https://sandtoncity.com/shops/repair-tech/"
+"Replay Country","U48","011 783 1233","https://sandtoncity.com/shops/replay-country/"
+"Salomon","L333","011 783 0026","https://sandtoncity.com/shops/salvatore-ferragamo/"
+"Samsonite","L51C","081 214 5098","https://sandtoncity.com/shops/samsonite/"
+"Samsung","L23","010 001 9440","https://sandtoncity.com/shops/samsung/" 
+"San Antonio Spur","C2/C3","010 593 4665","https://sandtoncity.com/shops/san-antonio-spur/"
+"Sandown Travel","7th Floor","011 506 5642","https://sandtoncity.com/shops/sandown-travel/"
+"Sandton Beauty Clinic","14th Floor","011 884 6579","https://sandtoncity.com/shops/sandton-beauty-clinic/"
+"Sandton City Centre Management","The Atrium – 1st Floor","011 217 6000","https://sandtoncity.com/shops/sandton-city-centre-management/"
+"Sandton Convention Centre","","011 779 0000","https://sandtoncity.com/shops/sandton-convention-centre/"
+"Sandton Hair","M40","011 783 7327","https://sandtoncity.com/shops/sandton-hair/"
+"Sandton Sports &#038; Spinal Centre","1st Floor","011 884 5306","https://sandtoncity.com/shops/sandton-sports-spinal-centre/"
+"Sandton Stamps &#038; Coins","13th Floor","011 783 8309","https://sandtoncity.com/shops/sandton-stamps-coins/"
+"Sandton Stationery &#038; Print","L8","011 883 4462","https://sandtoncity.com/shops/sandton-stationery-print/"
+"Sandton Sun","","011 780 5000","https://sandtoncity.com/shops/sandton-sun/"
+"Sandton Towers","","011 780 5555","https://sandtoncity.com/shops/sandton-towers/"
+"Scotch &#038; Soda","U80","011 784 3233","https://sandtoncity.com/shops/scotch-soda/"
+"Seafolly","L335","010 226 9314","https://sandtoncity.com/shops/seafolly/"
+"Sealand Gear","U87","010 746 3724","https://sandtoncity.com/shops/sealand-gear/"
+"Second Story","U311/312","010 015 5075","https://sandtoncity.com/shops/second-story/"
+"Seraglio Jewellers","6th Floor","011 883 7026","https://sandtoncity.com/shops/seraglio-jewellers/"
+"Shesha","L313","011 783 9524","https://sandtoncity.com/shops/shesha/"  
+"Shoe Care 3","B24A","011 783 6831","https://sandtoncity.com/shops/shoe-care-3/"
+"Sid Forman","BC36b","010 021 0290","https://sandtoncity.com/shops/sid-forman/"
+"Sissy Boy","L36","011 883 0322","https://sandtoncity.com/shops/sissy-boy/"
+"Skechers","L318","010 060 0644","https://sandtoncity.com/shops/skechers/"
+"Skins Cosmetics","U79","011 883 1350","https://sandtoncity.com/shops/skins-cosmetics/"
+"SoHo Nail Boutique","L31","011 784 0370","https://sandtoncity.com/shops/soho-nail-boutique/"
+"Sorbet","U102","010 746 1066","https://sandtoncity.com/shops/sorbet/"  
+"Sorbet Man","L32","011 784 8650","https://sandtoncity.com/shops/sorbet-man/"
+"Southern Sun Sandton","","011 282 0000","https://sandtoncity.com/shops/southern-sun-sandton/"
+"Spaces","The Atrium - 9th Floor","010 003 0800","https://sandtoncity.com/shops/spaces/"
+"Spitz","U64/66","010 493 3955","https://sandtoncity.com/shops/spitz/"  
+"Sportscene","L13A","011 784 2367","https://sandtoncity.com/shops/sportscene/"
+"Sportsmans Warehouse","U309","010 900 3804","https://sandtoncity.com/shops/sportsmans-warehouse/"
+"Standard Bank","B15","0860 101 341","https://sandtoncity.com/shops/standard-bank/"
+"Starbucks","Inside Checkers Hyper","011 883 0787","https://sandtoncity.com/shops/starbucks/"
+"Tag Heuer","U11","(011) 784 7422","https://sandtoncity.com/shops/tag-heuer/"
+"Taggs","U38B","(011) 883 0389","https://sandtoncity.com/shops/tashas/"
+"Ted Baker","U0C","011 883 3803","https://sandtoncity.com/shops/ted-baker/"
+"Telkom","B2A","(011) 326 6409","https://sandtoncity.com/shops/telkom/"
+"The Body Shop","L62","(011) 883 9060","https://sandtoncity.com/shops/the-body-shop/"
+"The Bread Basket","B28","(011) 783 9053","https://sandtoncity.com/shops/the-bread-basket/"
+"The Cross Trainer","L7","(010) 055 3054","https://sandtoncity.com/shops/the-cross-trainer/"
+"The Mauritius Commercial Bank Limited","The Atrium – 2nd Floor","(010) 730 0501","https://sandtoncity.com/shops/the-mauritius-commercial-bank-limited/"
+"The Nutri-Balance Centre","L57","(011) 884 8753","https://sandtoncity.com/shops/the-nutri-balance-centre/"
+"The Optical Centre","L14D","(011) 883 1312","https://sandtoncity.com/shops/the-optical-centre/"
+"The Power of Trading (Pty) Ltd","8th Floor","(011) 884 1425","https://sandtoncity.com/shops/the-power-of-trading-pty-ltd/"
+"The Real Repair Co","BC02B","(011) 050 9510","https://sandtoncity.com/shops/the-real-repair-co/"
+"The Salon Paul Mitchell","L15B","011 883 1792","https://sandtoncity.com/shops/the-salon-paul-mitchell/"
+"The Scoin Shop","B24","(011) 784 8525","https://sandtoncity.com/shops/the-scoin-shop/"
+"The Sunroom","Atrium Ground Floor","(011) 784 1094","https://sandtoncity.com/shops/the-sunroom/"
+"Thomas Sabo","L329","010 143 3601","https://sandtoncity.com/shops/thomas-sabo/"
+"Tiger of Sweden","U75D","(011) 883 2158","https://sandtoncity.com/shops/tiger-of-sweden/"
+"Tiger Wheel &#038; Tyre","Level 7 Rooftop via Sandton Drive","011 883 6626","https://sandtoncity.com/shops/tiger-wheel-tyre/"
+"Timberland","L75","(011) 883 9223","https://sandtoncity.com/shops/timberland/"
+"Tod's","U23","(011) 883 1163","https://sandtoncity.com/shops/tods/"  
+"Toplink SA Travel","9th Floor","","https://sandtoncity.com/shops/toplink-sa-travel/"
+"Torga Optical","L77","Opening Soon","https://sandtoncity.com/shops/torga-optical/"
+"Totalsports","L16","(011) 685 1451","https://sandtoncity.com/shops/totalsports/"
+"Toy Kingdom","L81","(011) 883 0005","https://sandtoncity.com/shops/toy-kingdom/"
+"Toyota Tshuso Africa (Pty) Ltd","The Atrium – 6th Floor","(011) 779 6516","https://sandtoncity.com/shops/toyota-tshuso-africa-pty-ltd/"
+"Tradecorp Chemicals","12th Floor","(010) 594 3979","https://sandtoncity.com/shops/tradecorp-chemicals/"
+"Tradecorp Ventures Pty Ltd","17th Floor","072 281 9758","https://sandtoncity.com/shops/tradecorp-ventures-pty-ltd/"
+"Travelex","B36A","011 883 9009","https://sandtoncity.com/shops/travelex/"
+"Trenton","L322","011 783 9002","https://sandtoncity.com/shops/truworths/"
+"Truworths Emporium","U330","(011) 783 9002","https://sandtoncity.com/shops/truworths-emporium/"
+"Tugendhaft Wapnick Banchetti &#038; Partners (TWB)","20th Floor","(011) 291 5000","https://sandtoncity.com/shops/tugendhaft-wapnick-banchetti-partners-twb/"
+"Typo","L28","(011) 784 2485","https://sandtoncity.com/shops/typo/"   
+"Under Armour","L68","021 201 1349","https://sandtoncity.com/shops/under-armour/"
+"UniQBrows","L31F","010 054 5165","https://sandtoncity.com/shops/uniqbrows/"
+"Valenci","L40","072 316 3158","https://sandtoncity.com/shops/valenci/" 
+"Vans","U57","087 365 3886","https://sandtoncity.com/shops/vans/"       
+"Vaperite","L37","010 023 2427","https://sandtoncity.com/shops/vaperite/"
+"Versace","U18","(011) 883 1444","https://sandtoncity.com/shops/versace/"
+"Vida e Caffè","Office Tower (Lobby)","010 213 0350","https://sandtoncity.com/shops/vida-e-caffe/"
+"Visual Concepts","U005","(011) 884 0232","https://sandtoncity.com/shops/visual-concepts-2/"
+"Visual Concepts","L319","(011) 783 1405","https://sandtoncity.com/shops/visual-concepts/"
+"Vodacom 4U","B28A","(010) 745 7771","https://sandtoncity.com/shops/vodacom-4u/"
+"Vodacom Shop","U55","(011) 883 3300","https://sandtoncity.com/shops/vodacom-shop/"
+"Volpes","U326","010 730 0523","https://sandtoncity.com/shops/volpes/"  
+"W&#038;L Diamond Trading CC","13th Floor","(011) 883 1608","https://sandtoncity.com/shops/wl-diamond-trading-cc/"
+"Walnut Grove","B38","011 783 6111","https://sandtoncity.com/shops/walnut-grove/"
+"Wimpy","L14F","071 814 3289","https://sandtoncity.com/shops/wimpy/"    
+"Woolworths","U0D / L0D","(011) 290 1011","https://sandtoncity.com/shops/woolworths/"
+"X &#8211; Kids","L61","(010) 055 3056","https://sandtoncity.com/shops/x-kids/"
+"X Trend","B27","(010) 055 3074","https://sandtoncity.com/shops/x-trend/"
+"Xiaomi","L21","010 226 9782","https://sandtoncity.com/shops/xiaomi/"   
+"YAWA (Pop Up)","Diamond Walk Court","084 248 4602","https://sandtoncity.com/shops/yawa-pop-up/"
+"YDE","U331","081 171 0152","https://sandtoncity.com/shops/yde/"        
+"Yogurtland","FC06","064 543 3626","https://sandtoncity.com/shops/yogurtland/"
+"Yuppie Chef","L337","(010) 446 7711","https://sandtoncity.com/shops/yuppie-chef/"
+"Zara","U302/303","(011) 302 1500","https://sandtoncity.com/shops/zara/"
+"Zena Jacobson","Suite 124 Medical Mews","(011) 784 0754","https://sandtoncity.com/shops/zena-jacobson/"
+
+
+## Promotions
+
+1. 
+
+## Unique Attractions
+
+### FASHION CLUB
+
+Garden Route Mall hosts an exciting and trendy Fashion Club and we'd love you to join! It's the perfect opportunity to keep up to date with fashion trends and styles and to be the first to see new stock on the shelves.
+
+Registration is FREE, however an entry fee is charged per event, dependent on the type of event. Each event entails a quick registration upon arrival, payment (please note cash payments only as no Credit Card or EFT facilities are available), light finger snacks, welcome drinks, a fashion “lesson” by Mandy Vermaak and on occasion a guest speaker.
+
+## Parking Details
+
+### Parking Description
+
+- Sandton City offers easily accessible and ample parking for your convenience.
+Disabled parking facilities are located outside all main entrances.
+- The parking pay stations are situated next to each entrance for added convenience.
+- Ticketless parking at your fingertips. Effortless parking is now available at Sandton City with admyt. No ticket. No Q. No worries. [Register Now](https://www.admyt.com/)
+
+## PARKING TARIFFS ARE AS FOLLOWS
+0-2 hours	R10
+2-3 hours	R15
+3-4 hours	R20
+4-5 hours	R35
+5-6 hours	R50
+6-7 hours	R65
+7-8 hours	R70
+8-12 hours	R90
+12-24 hours	R100
+Weekends and public holidays	R10 flat rate
+
+### Lost Ticket: R90
+Please note that there is a 20-minute drop-off/drive-through grace period.
+For more information on our parking facilities, please contact our Parking Manager.
+
+### Admyt
+Your time is too precious to wait in queues or look for lost tickets. Admyt streamlines the entry and exit at your favourite shopping centres with one simple account that gives you a safer, easier and more personal parking experience than evere before.
+[Register Now](https://www.admyt.com/)
+
+## Trading Hours
+
+- Monday: 9am to 7pm
+- Tuesday: 9am to 7pm
+- Wednesday: 9am to 7pm
+- Thursday: 9am to 7pm
+- Friday: 9am to 8pm
+- Saturday: 9am to 8pm
+- Sunday: 9am to 6pm
+- Public holidays: 9am to 6pm
+
+## Restaurant Trading Hours
+The above trading hours are Sandton City's core trading hours, meaning that cinemas, restaurants and selected stores may trade longer. I you want details on a specific store please let me know.
+
+## History of the Centre
+This metropolis was proudly developed from the ground up almost half a century ago, in 1973. It has been a mesmerising and awe-inspiring journey as Sandton City was the first development in the area, surrounded by sandy horse trails and grassy estates.
+
+From a world-class super regional shopping destination, to prime-grade office buildings, world-class hotels and vibrant hang-outs, Sandton City has inspired urban creativity and community and set the benchmark for what the Sandton District has become today.
+
+Sandton City was constructed and developed by Rapp and Maister on behalf of the Liberty Group, and following its official opening, the centre soon became one of the most prestigious shopping centres in Africa – and paved the way for Sandton to become what is now known as ‘Africa's Richest Square Mile'.
+
+Since its inception, spanning just 50 000m2, Sandton City has gone on to enjoy much growth and development. In 2011, Sandton City embarked on a monumental R1.77 billion expansion, and introduced additional retail space, known as The Protea Court, that took the centre to a 146 803m2 of retail, leisure, and dining space.
+
+Following the Protea expansion, Sandton City's owners continued to invest in the centre and from 2015, hundreds of millions was spent on the redevelopment of  The Diamond Walk, The Fun District, The Food District, The Checkers Court as well as continuous investments into the centre's facilities and office components, The Atrium on 5th and The Sandton City Office Tower.
+
+Sandton City is quite simply an unparalleled shopping destination, and has successfully maintained its reputation as being ‘Africa's most iconic shopping centre' since 1973.
+
+## Office Space
+Position your business in prime position with state-of-the-art office space in Sandton, the heart of Africa's innovative economic hub.
+
+For more information please fill in the form below
+or contact Michelle Martin on +2764 505 9933.
+
+## Centre Marketing
+For all marketing related enquiries please contact Lana Maree-Arendse on:
+Tel: 011 217 6000
+Email: Lana.Maree-Arendse@epsgroup.co.za
+
+## Social Responsibility
+Although the centre is known for representing fashion and elegance, Sandton City also strives to assist those in need in the surrounding communities. In order to do this, one of Sandton City's main objectives is to undertake a meaningful corporate social responsibility programme.
+
+## Create Tomorrow
+From the onset, #CreateTomorrow was not just a conversation starter, but an important invitation to all of us to take on the task of rebuilding through compassion and action, with our malls leading the drive.
+
+As the starting point, especially during Level 5 lockdown, it was important to recognise the every-day heroes and heroines – the essential workers – on the frontline, putting their lives at risk to ensure that the rest of SA would be able to stay at home and do our part in fighting this pandemic.
+
+### Park. pay. we will pay it forward
+As we commit to #CreateTomorrow and help rebuild communities in need, #IconicSandton will be donating a percentage of your parking fee to @Raysofhope_rsa, the NGO working tirelessly to help uplift members of our neighbouring Alexandra community.
+
+We recognise the urgent need for relief during these harrowing times, and are committed to help rebuild and uplift the most vulnerable. Thank you for your commitment and support.
+
+
+## Services & Facilities
+Sandton City prides itself on providing its customers with a wide variety of world-class services that are aimed at catering for all our shoppers needs during their shopping trip. These services include information kiosks, gift cards, store directories, free wheelchair services, male, female and disabled toilet facilities, as well as baby changing rooms and feeding rooms.
+- INFORMATION KIOSK
+Shoppers who are looking for store information, directions around the centre and local area information can visit the information kiosks. These friendly Sandton City hosts are situated in the Banking Mall, on the Lower Level in the Checkers Court area (opposite Totalsports and Swarovski), on the Upper Level near Woolworths.
+Monday – Thursday		09h00 – 19h00	
+Friday – Saturday		09h00 – 20h00	
+Sunday & Public Holidays		09h00 – 18h00
+
+- MY SANDTON CITY STOP
+Sandton City is home to some of retail's most disruptive innovations, with community place making, curating the customer's experience and embracing technology being core to Sandton City's strategy.
+Regardless the modes of transport, Sandton City shoppers can finally wait in a stylish, safe and secure destination under Sandton City's watchful eye.
+My Sandton City Stop transforms public transport from sideroad-waiting, to stylish-travelling. Located in Sandton City's premises, off Maude and 5th Streets, one can find this secure, tailored pick-up and drop-off area that welcomes all modes of public transport that suit the needs of Sandton City's visitors.
+With a sophisticated security plan in place, My Sandton City Stop boasts a comfortably seated waiting room adjacent to the flowing pick-up and drop-off zone, with a 24-hour security presence as well as 24-hour surveillance monitoring for the safety of Sandton City's customers.
+
+- WHEELCHAIRS
+Wheelchairs are available for hire from any Sandton City information kiosk. To hire a wheelchair, you will need positive identification, either a barcoded ID or valid driver’s license, as well as a R250 security deposit, which is fully refundable.
+
+- MUSLIM PRAYER ROOM
+A Muslim prayer room is located on Level 7 outside Entrance 27.
+
+- SMOKING AREAS
+As per the new national smoking legislation, smoking in an enclosed and public area is illegal unless the area is deemed a smoking area. Please note that no smoking is allowed in the undercover parking areas of the centre, and there are no stores or restaurants at Sandton City that offer smoking sections.
+
+- BABY FACILITIES
+The baby changeroom in the Food Court has areas to change, feed and rest your baby as well as two private feeding rooms.
+A family toilet facility is conveniently situated next to the baby changeroom.
+Most of the newly refurbished toilets in the centre include the parent and child toilet (adult and junior-size toilets), baby changing rooms and feeding rooms.
+
+- BABY CARE LOUNGE
+Those with babies and toddlers are offered a dedicated and fully equipped lounge where they can feed and change their little ones at ease. The Baby Care Lounge is Sandton City’s exclusive baby changing and feeding facility which offers private and comfortable breastfeeding booths, family bathrooms, a food preparation area and a tailored soft play area.
+
+## Gift Cards
+The Sandton City gift card is a gift that never disappoints. Who would have thought that a glittering piece of plastic could be a passport to an entire world of choice? Whether it's the latest fashions off the runway, the finest homeware and furniture design, health and beauty products or dining out in luxury, – Sandton City's flair for distinction ensures all tastes and styles are met with an endless array of choice with some of the world's most desirable brands.
+
+The gift cards are available from the Information Kiosks, which are located in the Banking Mall, on the Upper Level near Woolworths, the Lower Level near Totalsports.
+
+In terms of the new FICA legislation, Sandton City now requires that shoppers produce their South African identity documents when purchasing a gift card. Please ensure you have the original document with you. The information kiosk officer will simply scan your South African ID document/driver's license using an A5 scanner situated inside the kiosk.
+
+### Gift card notice
+Please note that the Sandton City gift card is intended for use within Sandton City Shopping Centre.
+
+Should you choose to use your gift card outside of Sandton City, you will incur a fee per transaction. However, you'll be able to shop up a storm with the Sandton City gift cards as they are redeemable at:
+
+More than 400 retail stores in Sandton City and Nelson Mandela Square (excluding banks)
+More than 1 000 stores countrywide at all Liberty – owned shopping centres (including Eastgate, Liberty Promenade and Liberty Midlands Mall)
+### Forms of payment for Gift Cards
+
+- Electromic Transfer
+Electronic fund transfers and direct deposits must reflect in the Sandton City gift card bank account before any gift cards may be issued, therefore should you bank with any bank other than Standard Bank, the payment will take two to three working days to reflect in the bank account. If you bank with Standard Bank, it can take up to 24 hours for the money to reflect in the bank account.
+
+- Debit/Credit Card
+The cardholder must be present at the time of the gift card transaction and all transactions must be processed at Sandton City Shopping Centre. If you require authorisation, please ensure that the bank is aware of the transaction prior to the processing thereof as manual transactions are NOT permitted and we are not able to obtain authorisation from the bank to complete the transaction.
+
+- Cheque
+No cheque deposits or payments will be accepted.
+For any queries please contact Brenda.mthethwa@excelleratejhi.com and Kassandra.Sukhessan@excelleratejhi.com
+For corporate sales please contact 011 217 6000/11/12
+
+### How to check your gift card balace:
+Do you have a Sandton City Gift Card and are not sure of what your balance is? Now you can easily check your own gift card balance online. All you have to do is:
+- Log onto www.whatsonmycard.com
+- Enter your card number.
+- Answer a security question.
+- Then click on “fetch balance”.
+You can also SMS your card number to 34246. It is that simple!
+
+## Contact Details and Address
+- Telephone: 011 217 6000
+- Fax: 011 883 0978
+- Physical Address: Sandton City Centre Management Offices, Atrium on 5th, Sandton City
+- Postal: PO Box 78100, Sandton 2146
+- [Contact Form](https://sandtoncity.com/contact-us/)
+
+## Map Embed Code
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14330.78320047899!2d28.052720000000004!3d-26.108847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95732d7abaa2bb%3A0x6e3b5ac49f8d784b!2sSandton%20City!5e0!3m2!1sen!2sza!4v1689668902376!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+## Google Maps Link
+https://goo.gl/maps/JwdVvETRnH35FQPu8
+
+## Mall Management
+- Sandton City Centre Management Offices, 
+- Street: Atrium on 5th, 
+- Suburb: Sandton City, 
+- City: Sandton 2196
+- Telephone Nyumber: 011 217 6000
+
+## Social Media
+
+Facebook URL: https://www.facebook.com/MenlynSA/
+
+Instagram URL: https://www.instagram.com/menlynsa/
+
+Twitter: https://twitter.com/MenlynSA
+
+Pinterest: https://za.pinterest.com/menlynloves/
+
+YouTube: https://www.youtube.com/channel/UCxP149tL7fYLldWpuheEGwQ
+
+
+
+

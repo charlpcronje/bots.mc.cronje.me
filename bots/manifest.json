@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Radiance",
+    "title": "Welcome Bot - The Welcome Bot's primary responsibility is to provide a warm and friendly greeting to shoppers and visitors as they enter the Mall",
+    "imageUrl": "/welcomeBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Sentinel",
+    "title": "Lost & Found Bot - A reliable bot that helps visitors at [Mall Name] retrieve lost items. It provides a streamlined process for reporting lost belongings, offers updates on found items, and assists in coordinating their return. The Lost & Found Bot ensures a swift and efficient resolution for misplaced items, providing peace of mind to shoppers.",
+    "imageUrl": "/lostAndFoundBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Atlas",
+    "title": "Guide Bot - A virtual guide within [Mall Name], offering assistance in exploring and navigating the mall, providing information on stores, services, facilities, and events, ensuring shoppers have a memorable and convenient experience at the mall.",
+    "imageUrl": "/guideBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Argos",
+    "title": "Tenant Bot - An interactive bot specifically for the tenants for all administrative enquiries at [Mall Name]. It ensures effective communication between the management and tenants, addressing concerns, and providing updates, maintenance, and improvements within the mall.",
+    "imageUrl": "/tenantBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Nexus",
+    "title": "Aggregator Bot - The Aggregator Bot at [Mall Name] is an intelligent and versatile bot designed to enhance the overall shopping experience. It serves as a central hub for delegating user inquiries to specialized bots within the mall's chatbot ecosystem. With its comprehensive knowledge and understanding of the available bots, the Aggregator Bot efficiently routes queries to the appropriate bot, ensuring that shoppers receive accurate and timely assistance.",
+    "imageUrl": "/aggregatorBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Aether",
+    "title": "System Admin Bot - If you have any technical issues, feedback, or suggestions, please let me know. I'm dedicated to ensuring the best user experience for our customers",
+    "imageUrl": "/systemAdminBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Fortitude",
+    "title": "Security Bot - A vigilant bot deployed at [Mall Name] to ensure the safety and security of shoppers. It provides information on security protocols, emergency procedures, and guidelines. The bot is equipped to handle security concerns, report incidents, and offer assistance to create a secure environment within the mall.",
+    "imageUrl": "/securityBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Valetix",
+    "title": "Parking Bot - A bot dedicated to the parking facilities at [Mall Name], assisting shoppers with parking guidance, availability status, and payment options. It offers real-time updates on parking spaces, helping visitors navigate the parking lot and ensuring a hassle-free parking experience.",
+    "imageUrl": "/parkingBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Samuel",
+    "title": "Management Bot - An interactive bot representing the mall management team at [Mall Name], assisting shoppers with inquiries, feedback, and suggestions. It ensures effective communication between the management and visitors, addressing concerns, and providing updates on events, maintenance, and improvements within the mall.",
+    "imageUrl": "/managementBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Flavory",
+    "title": "Food & Drink Bot - A chat bot focused on the food court at [Mall Name], offering menus, food recommendations, table reservations, and information on various food vendors to assist shoppers in making delightful dining choices within the mall.",
+    "imageUrl": "/foodAndDrinkBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Seraphina",
+    "title": "Fashion Bot - A chat bot focused on fashion within [Mall Name], offering personalized styling tips, trend recommendations, and information on the latest fashion collections and promotions available in the mall's diverse range of fashion stores.",
+    "imageUrl": "/fashionBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Financier",
+    "title": "Banking Bot - An AI-powered chat bot that provides banking services within [Mall Name], assisting shoppers with balance inquiries, transaction history, funds transfers, and other financial tasks conveniently within the mall premises.",
+    "imageUrl": "/bankingBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Phoenix",
+    "title": "Arcade Bot - A virtual assistant designed to enhance the arcade experience at [Mall Name], offering information on game availability, high scores, and tips for gamers of all ages visiting the mall.",
+    "imageUrl": "/arcadeBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Virtuoso",
+    "title": "Movie Bot - A bot designed to enhance the movie-going experience at [Mall Name]'s theater, providing movie schedules, ticket bookings, seat selection, and information on upcoming releases and special screenings, ensuring that movie enthusiasts have a seamless and enjoyable cinematic experience.",
+    "imageUrl": "/movieBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Enigma",
+    "title": "Info Bot - An all-encompassing information bot for [Mall Name], offering details on mall directories, store locations, operating hours, special promotions, and general inquiries. It acts as a helpful resource for shoppers, providing them with quick and accurate information about the mall and its offerings.",
+    "imageUrl": "/infoBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Frost",
+    "title": "Ice Rink Bot - An interactive bot dedicated to the ice rink at [Mall Name], providing information on ice skating sessions, lessons, and special events. It offers assistance in reserving ice time, sharing safety guidelines, and keeping skaters updated on the latest happenings at the rink.",
+    "imageUrl": "/iceRinkBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Orion",
+    "title": "Events Bot - A bot designed to inform shoppers at [Mall Name] about various events and activities happening within the mall, providing details on schedules, performances, workshops, and promotions to enhance their mall experience.",
+    "imageUrl": "/eventsBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Ares",
+    "title": "Sports Bot - A bot focused on promoting sports and fitness activities at [Mall Name]. It offers information on sports events, classes, equipment rentals, and fitness facilities available within the mall premises. The bot encourages visitors to lead an active lifestyle and explore sports-related opportunities.",
+    "imageUrl": "/sportsBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Seeker",
+    "title": "Finder Bot - A smart search bot specifically designed for [Mall Name], helping shoppers find specific stores, products, services, or facilities within the mall, ensuring a seamless and efficient shopping experience tailored to the mall's unique layout.",
+    "imageUrl": "/finderBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Dynamo",
+    "title": "Media Bot - A bot designed to enhance the media experience at [Mall Name], providing information on media-related events, exhibitions, and promotions happening within the mall. It offers updates on art installations, photography contests, and interactive media experiences, fostering creativity and engagement among visitors.",
+    "imageUrl": "/mediaBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Echo",
+    "title": "Feedback Bot - The Feedback Bot specializes in gathering feedback on various aspects of the mall experience, such as customer service, cleanliness, facilities, and overall satisfaction. It employs sentiment analysis algorithms to analyze and categorize feedback, providing valuable insights to the mall management for targeted improvements.",
+    "imageUrl": "/feedbackBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "name": "Valor",
+    "title": "Accessibility Bot - Ensure a welcoming and inclusive environment for all shoppers and visitors at the Mall",
+    "imageUrl": "/accessibilityBot.png",
+    "llm": "chatgpt"
+  },
+  {
+    "title": "Translation Bot - The Translation Bot specializes in various languages, all 11 of the South African Languages plus most of the European Languages",
+    "imageUrl": "/TranslationBot.png",
+    "llm": "chatgpt",
+    "name": "Polyglot"
+  }
+]
