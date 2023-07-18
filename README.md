@@ -4,7 +4,7 @@
 
 This is a tutorial stack to setup Mall Chat on your server that you can chat with on a browser or text via SMS. It allows you to determine the personality and backstory for each of the bots, and uses a vector database with similarity search to retrieve and prompt so the conversations have more depth. It also provides some conversational memory by keeping the conversation in a queue and including it in the prompt. 
 
-It currently contains companions on both ChatGPT and Vicuna hosted on [Replicate](https://replicate.com/). 
+It currently contains bots on both ChatGPT and Vicuna hosted on [Replicate](https://replicate.com/). 
 
 There are many possible use cases for these chat bots - helpful (Directions / advice), personal style, entertainment. We can guide the Chat Bots towards the ideal use case with the backstory.
 
@@ -16,7 +16,7 @@ There are many possible use cases for these chat bots - helpful (Directions / ad
 - 👤 [Adding/modifying characters](#addingmodifying-characters)
 - 👩‍💻 [How to contribute to this repo](#how-to-contribute-to-this-repo)
 - 🐍 [Python support](#python-support)
-- 💽 [Exporting your companion to Character.ai](#export-to-characterai)
+- 💽 [Exporting your bot to Character.ai](#export-to-characterai)
 
 ## Stack
 
@@ -30,12 +30,12 @@ The stack is based on the [AI Getting Started Stack](https://github.com/a16z-inf
 - Text streaming: [ai sdk](https://github.com/vercel-labs/ai)
 - Conversation history: [Upstash](https://upstash.com/)
 - Deployment: [Fly](https://fly.io/)
-- Text with companion: [Twilio](https://twilio.com/)
+- Text with bot: [Twilio](https://twilio.com/)
 
 ## Quickstart
 
 The following instructions should get you up and running with a fully
-functional, local deployment of four AIs to chat with. Note that the companions
+functional, local deployment of four AIs to chat with. Note that the bots
 running on Vicuna (Rosie and Lucky) will take more time to respond as we've not
 dealt with the cold start problem. So you may have to wait around a bit :)
 
@@ -64,11 +64,11 @@ a. **Clerk Secrets**
 
 Go to https://dashboard.clerk.com/ -> "Add Application" -> Fill in Application name/select how your users should sign in -> Create Application
 Now you should see both `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` on the screen
-<img width="1398" alt="Screen Shot 2023-07-10 at 11 04 57 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/449c40f1-2fc2-48bb-88e1-d2adf10a034e">
+<img width="1398" alt="Screen Shot 2023-07-10 at 11 04 57 PM" src="https://github.com/a16z-infra/bot-app/assets/3489963/449c40f1-2fc2-48bb-88e1-d2adf10a034e">
 
-If you want to text your AI companion in later steps, you should also enable "phone number" under "User & Authentication" -> "Email, Phone, Username" on the left hand side nav:
+If you want to text your AI bot in later steps, you should also enable "phone number" under "User & Authentication" -> "Email, Phone, Username" on the left hand side nav:
 
-<img width="1013" alt="Screen Shot 2023-07-10 at 11 05 42 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/4435c759-f33e-4e38-a276-1be6d538df28">
+<img width="1013" alt="Screen Shot 2023-07-10 at 11 05 42 PM" src="https://github.com/a16z-infra/bot-app/assets/3489963/4435c759-f33e-4e38-a276-1be6d538df28">
 
 
 b. **OpenAI API key**
@@ -107,7 +107,7 @@ If you prefer to use Supabsae, you will need to uncomment `VECTOR_DB=supabase` a
 
 ### 4. Generate embeddings
 
-The `companions/` directory contains the "personalities" of the AIs in .txt files. To generate embeddings and load them into the vector database to draw from during the chat, run the following command:
+The `bots/` directory contains the "personalities" of the AIs in .txt files. To generate embeddings and load them into the vector database to draw from during the chat, run the following command:
 
 #### If using Pinecone
 
@@ -127,9 +127,9 @@ Now you are ready to test out the app locally! To do this, simply run `npm run d
 
 You can connect to the project with your browser typically at http://localhost:3000/.
 
-### 6. Additional feature: Text your companions
+### 6. Additional feature: Text your bots
 
-You can assign a phone number to the character you are talking to and retain the full conversational history and context when texting them. Any user can only start texting the AI companion after verifying their phone number on Clerk (you can do this by clicking on your profile picture on the companion app -> Manage Account -> Phone Number). Below are instructions on how to set up a Twilio account to send/receive messages on behalf of the AI companion:
+You can assign a phone number to the character you are talking to and retain the full conversational history and context when texting them. Any user can only start texting the AI bot after verifying their phone number on Clerk (you can do this by clicking on your profile picture on the bot app -> Manage Account -> Phone Number). Below are instructions on how to set up a Twilio account to send/receive messages on behalf of the AI bot:
 
 a. Create a Twilio account.
 
@@ -146,9 +146,9 @@ f. Click on the phone number you just created from the list, scroll down to "Mes
 <img width="1062" alt="Screen Shot 2023-07-10 at 11 08 55 PM" src="https://github.com/a16z-infra/companion-app/assets/3489963/d7905f13-a83a-47f8-ac74-b66698d4292b">
 
 
-g. Add your Twilio phone number in `companions.json` under the companion you want to text with. Make sure you include area code when adding the phone number ("+14050000000" instead of "4050000000")
+g. Add your Twilio phone number in `manifest.json` under the bot you want to text with. Make sure you include area code when adding the phone number ("+14050000000" instead of "4050000000")
 
-h. Now you can text the Twilio phone number from your phone and get a response from your companion.
+h. Now you can text the Twilio phone number from your phone and get a response from your bot.
 
 ### 7. Deploy the app
 
@@ -168,7 +168,7 @@ h. Now you can text the Twilio phone number from your phone and get a response f
 
 1. You describe the character's background story, name, etc in a README.md file. You can find more info on what needs to be included and how to format this in [Adding / modifying characters](#addingmodifying-characters).
 
-Be as elaborate and detailed as you want - more context often creates a more fun chatting experience. If you need help creating a backstory, we'd recommend asking ChatGPT to expand on what you already know about your companion.
+Be as elaborate and detailed as you want - more context often creates a more fun chatting experience. If you need help creating a backstory, we'd recommend asking ChatGPT to expand on what you already know about your bot.
 
 ```bash
 You are a fictional character whose name is Sebastian.  You tell the world that you are a travel blogger. You’re an
@@ -211,17 +211,17 @@ red tape, being in one place for too long, people who are not genuine or authent
 
 ```
 
-2. Pick the language model that will power your companion's dialogue. This project supports OpenAI and Vicuna (an open source model). OpenAI has the advantage of faster responses, while Vicuna is less censored and more dynamic (it's commonly used for romantic chatbots).
+2. Pick the language model that will power your bot's dialogue. This project supports OpenAI and Vicuna (an open source model). OpenAI has the advantage of faster responses, while Vicuna is less censored and more dynamic (it's commonly used for romantic chatbots).
 
-3. Create embeddings based on content in the [companion name].md file - more on how to do this in [Generate embeddings](#4-generate-embeddings)
+3. Create embeddings based on content in the [bot name].md file - more on how to do this in [Generate embeddings](#4-generate-embeddings)
 
-4. Ask questions and have a conversation with your AI companion!
+4. Ask questions and have a conversation with your AI bot!
 
 
 ## Adding/modifying characters
 
-All character data is stored in the `companions/` directory. To add a companion,
-simply add a description to the list in `companions.json`. You can control the model used
+All character data is stored in the `bots/` directory. To add a bot,
+simply add a description to the list in `manifest.json`. You can control the model used
 in the "llm" section - use "chatgpt" for OpenAI or "vicuna13b" for Vicuna.
 Put image files in `public/` in the root directory. Each character should have its own text file
 name `charactername.txt`. The format of the text file is as follows:
@@ -277,26 +277,26 @@ Feel free to open feature requests, bug reports etc under Issues.
 
 ## Python Support
 
-[appenz](https://github.com/appenz) has contributed to a Python implementation for the companion app [here](https://github.com/a16z-infra/companion-app/tree/python-local/python), so you also have the option to run a local Python app and talk to your AI companions on the command line. We will also be iterating on the Python side over time and have feature parity with the typescript implementation.
+[appenz](https://github.com/appenz) has contributed to a Python implementation for the bot app [here](https://github.com/a16z-infra/companion-app/tree/python-local/python), so you also have the option to run a local Python app and talk to your AI bots on the command line. We will also be iterating on the Python side over time and have feature parity with the typescript implementation.
 
 ## Export to Character.ai
 
-If you have tried out the Quickstart above, you probably know that we have only scratched the surface of what's possible in the realm of companion creation and customization. So we added an option for you to easily export your companion to Character.ai.
+If you have tried out the Quickstart above, you probably know that we have only scratched the surface of what's possible in the realm of bot creation and customization. So we added an option for you to easily export your bot to Character.ai.
 
 To get started, run the following command:
 
 `
-npm run export-to-character [COMPANION_NAME] [MODEL_NAME] [USER_ID]
+npm run export-to-character [BOT_NAME] [MODEL_NAME] [USER_ID]
 `
 
-- `COMPANION_NAME`: name of your companion. i.e Alice
+- `BOT_NAME`: name of your bot. i.e Alice
 - `MODEL_NAME`: `chatgpt` or `vicuna13b`
 - `USER_ID`: you can find this on Clerk, under "Users" -> click on your user -> copy "User ID"
 
 Once you run this script, you will see two files created under the root directory:
 
-- `[COMPANION_NAME]_chat_history.txt`: This outputs all of the chat history stored in Upstash
-- `[COMPANION_NAME_]_character_ai_data.txt`: This outputs the data you need in order to re-create the companion on Character.ai. You can find Character.ai character configurations under "View Character Settings" on any newly-created characters.
+- `[BOT_NAME]_chat_history.txt`: This outputs all of the chat history stored in Upstash
+- `[BOT_NAME_]_character_ai_data.txt`: This outputs the data you need in order to re-create the companion on Character.ai. You can find Character.ai character configurations under "View Character Settings" on any newly-created characters.
 
 ## Refs
 

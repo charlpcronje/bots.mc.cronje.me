@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "PORT=3070 next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=3070 next start",
     "lint": "next lint",
     "generate-embeddings-pinecone": "node src/scripts/indexPinecone.mjs",
     "generate-embeddings-supabase": "node src/scripts/indexPGVector.mjs",
