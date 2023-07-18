@@ -19,14 +19,14 @@ export async function POST(request: Request) {
   const prompt = queryMap["Body"];
   const serverUrl = request.url.split("/api/")[0];
   const phoneNumber = queryMap["From"];
-  const companionPhoneNumber = queryMap["To"];
+  const botPhoneNumber = queryMap["To"];
 
   const identifier = request.url + "-" + (phoneNumber || "anonymous");
   const { success } = await rateLimit(identifier);
   if (!success) {
     console.log("INFO: rate limit exceeded");
     return new NextResponse(
-      JSON.stringify({ Message: "Hi, the companions can't talk this fast." }),
+      JSON.stringify({ Message: "Hi, the Bots can't talk this fast." }),
       {
         status: 429,
         headers: {
@@ -52,12 +52,12 @@ export async function POST(request: Request) {
   }
 
   const configManager = ConfigManager.getInstance();
-  const companionConfig = configManager.getConfig(
+  const botConfig = configManager.getConfig(
     "phone",
-    companionPhoneNumber
+    botPhoneNumber
   );
-  console.log("companionConfig: ", companionConfig);
-  if (!companionConfig || companionConfig.length == 0) {
+  console.log("botConfig: ", botConfig);
+  if (!botConfig || botConfig.length == 0) {
     return new NextResponse(
       JSON.stringify({ Message: "User not authorized" }),
       {
@@ -69,10 +69,10 @@ export async function POST(request: Request) {
     );
   }
 
-  const companionName = companionConfig.name;
-  const companionModel = companionConfig.llm;
+  const botName = botConfig.name;
+  const botModel = botConfig.llm;
 
-  const response = await fetch(`${serverUrl}/api/${companionModel}`, {
+  const response = await fetch(`${serverUrl}/api/${botModel}`, {
     body: JSON.stringify({
       prompt,
       isText: true,
@@ -80,7 +80,7 @@ export async function POST(request: Request) {
       userName: users[0].firstName,
     }),
     method: "POST",
-    headers: { "Content-Type": "application/json", name: companionName },
+    headers: { "Content-Type": "application/json", name: botName },
   });
 
   const responseText = await response.text();

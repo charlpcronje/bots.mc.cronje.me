@@ -37,7 +37,7 @@ export default function QAModal({
   });
 
   if (!example) {
-    console.log("ERROR: no companion selected");
+    console.log("ERROR: no bot selected");
     return null;
   }
 

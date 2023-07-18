@@ -5,8 +5,8 @@ import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { SupabaseVectorStore } from "langchain/vectorstores/supabase";
 import { SupabaseClient, createClient } from "@supabase/supabase-js";
 
-export type CompanionKey = {
-  companionName: string;
+export type BotKey = {
+  botName: string;
   modelName: string;
   userId: string;
 };
@@ -43,7 +43,7 @@ class MemoryManager {
 
   public async vectorSearch(
     recentChatHistory: string,
-    companionFileName: string
+    botFileName: string
   ) {
     if (process.env.VECTOR_DB === "pinecone") {
       console.log("INFO: using Pinecone for vector search.");
@@ -59,7 +59,7 @@ class MemoryManager {
       );
 
       const similarDocs = await vectorStore
-        .similaritySearch(recentChatHistory, 3, { fileName: companionFileName })
+        .similaritySearch(recentChatHistory, 3, { fileName: botFileName })
         .catch((err) => {
           console.log("WARNING: failed to get vector search results.", err);
         });
@@ -92,17 +92,17 @@ class MemoryManager {
     return MemoryManager.instance;
   }
 
-  private generateRedisCompanionKey(companionKey: CompanionKey): string {
-    return `${companionKey.companionName}-${companionKey.modelName}-${companionKey.userId}`;
+  private generateRedisBotKey(botKey: BotKey): string {
+    return `${botKey.botName}-${botKey.modelName}-${botKey.userId}`;
   }
 
-  public async writeToHistory(text: string, companionKey: CompanionKey) {
-    if (!companionKey || typeof companionKey.userId == "undefined") {
-      console.log("Companion key set incorrectly");
+  public async writeToHistory(text: string, botKey: BotKey) {
+    if (!botKey || typeof botKey.userId == "undefined") {
+      console.log("Bot key set incorrectly");
       return "";
     }
 
-    const key = this.generateRedisCompanionKey(companionKey);
+    const key = this.generateRedisBotKey(botKey);
     const result = await this.history.zadd(key, {
       score: Date.now(),
       member: text,
@@ -111,13 +111,13 @@ class MemoryManager {
     return result;
   }
 
-  public async readLatestHistory(companionKey: CompanionKey): Promise<string> {
-    if (!companionKey || typeof companionKey.userId == "undefined") {
-      console.log("Companion key set incorrectly");
+  public async readLatestHistory(botKey: BotKey): Promise<string> {
+    if (!botKey || typeof botKey.userId == "undefined") {
+      console.log("Bot key set incorrectly");
       return "";
     }
 
-    const key = this.generateRedisCompanionKey(companionKey);
+    const key = this.generateRedisBotKey(botKey);
     let result = await this.history.zrange(key, 0, Date.now(), {
       byScore: true,
     });
@@ -130,9 +130,9 @@ class MemoryManager {
   public async seedChatHistory(
     seedContent: String,
     delimiter: string = "\n",
-    companionKey: CompanionKey
+    botKey: BotKey
   ) {
-    const key = this.generateRedisCompanionKey(companionKey);
+    const key = this.generateRedisBotKey(botKey);
     if (await this.history.exists(key)) {
       console.log("User already has chat history");
       return;

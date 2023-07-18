@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   if (!success) {
     console.log("INFO: rate limit exceeded");
     return new NextResponse(
-      JSON.stringify({ Message: "Hi, the companions can't talk this fast." }),
+      JSON.stringify({ Message: "Hi, the bots can't talk this fast." }),
       {
         status: 429,
         headers: {
@@ -31,9 +31,9 @@ export async function POST(request: Request) {
     );
   }
 
-  // XXX Companion name passed here. Can use as a key to get backstory, chat history etc.
+  // XXX bot name passed here. Can use as a key to get backstory, chat history etc.
   const name = request.headers.get("name");
-  const companion_file_name = name + ".txt";
+  const bot_file_name = name + ".txt";
 
   if (isText) {
     clerkUserId = userId;
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
   // discussion. The PREAMBLE should include a seed conversation whose format will
   // vary by the model using it.
   const fs = require("fs").promises;
-  const data = await fs.readFile("companions/" + companion_file_name, "utf8");
+  const data = await fs.readFile("bots/" + bot_file_name, "utf8");
 
   // Clunky way to break out PREAMBLE and SEEDCHAT from the character file
   const presplit = data.split("###ENDPREAMBLE###");
@@ -70,8 +70,8 @@ export async function POST(request: Request) {
   const seedsplit = presplit[1].split("###ENDSEEDCHAT###");
   const seedchat = seedsplit[0];
 
-  const companionKey = {
-    companionName: name!,
+  const botKey = {
+    botName: name!,
     userId: clerkUserId!,
     modelName: "vicuna13b",
   };
@@ -79,25 +79,25 @@ export async function POST(request: Request) {
 
   const { stream, handlers } = LangChainStream();
 
-  const records = await memoryManager.readLatestHistory(companionKey);
+  const records = await memoryManager.readLatestHistory(botKey);
   if (records.length === 0) {
-    await memoryManager.seedChatHistory(seedchat, "\n\n", companionKey);
+    await memoryManager.seedChatHistory(seedchat, "\n\n", botKey);
   }
   await memoryManager.writeToHistory(
     "### Human: " + prompt + "\n",
-    companionKey
+    botKey
   );
 
   // Query Pinecone
 
-  let recentChatHistory = await memoryManager.readLatestHistory(companionKey);
+  let recentChatHistory = await memoryManager.readLatestHistory(botKey);
 
   // Right now the preamble is included in the similarity search, but that
   // shouldn't be an issue
 
   const similarDocs = await memoryManager.vectorSearch(
     recentChatHistory,
-    companion_file_name
+    bot_file_name
   );
 
   let relevantHistory = "";
@@ -144,14 +144,14 @@ export async function POST(request: Request) {
   const response = chunks[0];
   // const response = chunks.length > 1 ? chunks[0] : chunks[0];
 
-  await memoryManager.writeToHistory("### " + response.trim(), companionKey);
+  await memoryManager.writeToHistory("### " + response.trim(), botKey);
   var Readable = require("stream").Readable;
 
   let s = new Readable();
   s.push(response);
   s.push(null);
   if (response !== undefined && response.length > 1) {
-    await memoryManager.writeToHistory("### " + response.trim(), companionKey);
+    await memoryManager.writeToHistory("### " + response.trim(), botKey);
   }
 
   return new StreamingTextResponse(s);

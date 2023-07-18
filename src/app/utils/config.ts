@@ -6,7 +6,7 @@ class ConfigManager {
   private config: any;
 
   private constructor() {
-    const data = fs.readFileSync("companions/companions.json", "utf8");
+    const data = fs.readFileSync("bots/manifest.json", "utf8");
     this.config = JSON.parse(data);
   }
 
@@ -18,7 +18,7 @@ class ConfigManager {
   }
 
   public getConfig(fieldName: string, configValue: string) {
-    //).filter((c: any) => c.name === companionName);
+    //).filter((c: any) => c.name === botName);
     try {
       if (!!this.config && this.config.length !== 0) {
         const result = this.config.filter(

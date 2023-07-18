@@ -4,7 +4,7 @@ import QAModal from "./QAModal";
 import Image from "next/image";
 import { Tooltip } from "react-tooltip";
 
-import { getCompanions } from "./actions";
+import { getBots } from "./actions";
 
 export default function Examples() {
   const [QAModalOpen, setQAModalOpen] = useState(false);
@@ -26,8 +26,8 @@ export default function Examples() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const companions = await getCompanions();
-        let entries = JSON.parse(companions);
+        const bots = await getBots();
+        let entries = JSON.parse(bots);
         let setme = entries.map((entry: any) => ({
           name: entry.name,
           title: entry.title,

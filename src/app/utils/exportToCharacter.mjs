@@ -7,17 +7,17 @@ import dotenv from "dotenv";
 import fs from "fs/promises";
 dotenv.config({ path: `.env.local` });
 
-const BOT_NAME = process.argv[2];
+const bot_NAME = process.argv[2];
 const MODEL_NAME = process.argv[3];
 const USER_ID = process.argv[4];
 
-if (!!!BOT_NAME || !!!MODEL_NAME || !!!USER_ID) {
+if (!!!bot_NAME || !!!MODEL_NAME || !!!USER_ID) {
   throw new Error(
-    "**Usage**: npm run export-to-character <BOT_NAME> <MODEL_NAME> <USER_ID>"
+    "**Usage**: npm run export-to-character <bot_NAME> <MODEL_NAME> <USER_ID>"
   );
 }
 
-const data = await fs.readFile("bots/" + BOT_NAME + ".txt", "utf8");
+const data = await fs.readFile("bots/" + bot_NAME + ".txt", "utf8");
 const presplit = data.split("###ENDPREAMBLE###");
 const preamble = presplit[0];
 const seedsplit = presplit[1].split("###ENDSEEDCHAT###");
@@ -31,7 +31,7 @@ const history = new Redis({
 });
 
 const upstashChatHistory = await history.zrange(
-  `${BOT_NAME}-${MODEL_NAME}-${USER_ID}`,
+  `${bot_NAME}-${MODEL_NAME}-${USER_ID}`,
   0,
   Date.now(),
   {
@@ -58,7 +58,7 @@ const chainPrompt = PromptTemplate.fromTemplate(`
   ${recentChat}
 
   
-  Above is someone whose name is ${BOT_NAME}'s story and their chat history with a human. Output answer to the following question. Return only the answer itself 
+  Above is someone whose name is ${bot_NAME}'s story and their chat history with a human. Output answer to the following question. Return only the answer itself 
   
   {question}`);
 
@@ -67,9 +67,9 @@ const chain = new LLMChain({
   prompt: chainPrompt,
 });
 const questions = [
-  `Greeting: What would ${BOT_NAME} say to start a conversation?`,
-  `Short Description: In a few sentences, how would ${BOT_NAME} describe themselves?`,
-  `Long Description: In a few sentences, how would ${BOT_NAME} describe themselves?`,
+  `Greeting: What would ${bot_NAME} say to start a conversation?`,
+  `Short Description: In a few sentences, how would ${bot_NAME} describe themselves?`,
+  `Long Description: In a few sentences, how would ${bot_NAME} describe themselves?`,
 ];
 const results = await Promise.all(
   questions.map(async (question) => {
@@ -87,5 +87,5 @@ for (let i = 0; i < questions.length; i++) {
 }
 output += `Definition (Advanced)\n${recentChat.join("\n")}`;
 
-await fs.writeFile(`${BOT_NAME}_chat_history.txt`, upstashChatHistory);
-await fs.writeFile(`${BOT_NAME}_character_ai_data.txt`, output);
+await fs.writeFile(`${bot_NAME}_chat_history.txt`, upstashChatHistory);
+await fs.writeFile(`${bot_NAME}_character_ai_data.txt`, output);

@@ -13,7 +13,7 @@ import path from "path";
 
 dotenv.config({ path: `.env.local` });
 
-const fileNames = fs.readdirSync("companions");
+const fileNames = fs.readdirSync("bots");
 const splitter = new CharacterTextSplitter({
   separator: " ",
   chunkSize: 200,
@@ -23,7 +23,7 @@ const splitter = new CharacterTextSplitter({
 const langchainDocs = await Promise.all(
   fileNames.map(async (fileName) => {
     if (fileName.endsWith(".txt")) {
-      const filePath = path.join("companions", fileName);
+      const filePath = path.join("bots", fileName);
       const fileContent = fs.readFileSync(filePath, "utf8");
       const lastSection = fileContent.split("###ENDSEEDCHAT###").slice(-1)[0];
       const splitDocs = await splitter.createDocuments([lastSection]);

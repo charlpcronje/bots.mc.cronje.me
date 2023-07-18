@@ -6,10 +6,10 @@ import dotenv from "dotenv";
 import { parse } from "path";
 
 
-export async function getCompanions() {
-  const COMPFILE = "./companions/companions.json";
-  var companions = [];
-  console.log("Loading companion descriptions from "+COMPFILE);
+export async function getBots() {
+  const COMPFILE = "./bots/manifest.json";
+  var bots = [];
+  console.log("Loading Bot descriptions from "+COMPFILE);
   var fs = require('fs');
   const data = fs.readFileSync(COMPFILE);
   console.log(String(data));

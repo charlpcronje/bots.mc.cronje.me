@@ -23,7 +23,7 @@ export async function POST(req: Request) {
   if (!success) {
     console.log("INFO: rate limit exceeded");
     return new NextResponse(
-      JSON.stringify({ Message: "Hi, the companions can't talk this fast." }),
+      JSON.stringify({ Message: "Hi, the Bots feel very rushed, they must need a break too sometimes." }),
       {
         status: 429,
         headers: {
@@ -33,9 +33,9 @@ export async function POST(req: Request) {
     );
   }
 
-  // XXX Companion name passed here. Can use as a key to get backstory, chat history etc.
+  // XXX Bot name passed here. Can use as a key to get backstory, chat history etc.
   const name = req.headers.get("name");
-  const companionFileName = name + ".txt";
+  const botFileName = name + ".txt";
 
   console.log("prompt: ", prompt);
   if (isText) {
@@ -66,7 +66,7 @@ export async function POST(req: Request) {
   // discussion. The PREAMBLE should include a seed conversation whose format will
   // vary by the model using it.
   const fs = require("fs").promises;
-  const data = await fs.readFile("companions/" + companionFileName, "utf8");
+  const data = await fs.readFile("bots/" + botFileName, "utf8");
 
   // Clunky way to break out PREAMBLE and SEEDCHAT from the character file
   const presplit = data.split("###ENDPREAMBLE###");
@@ -74,25 +74,25 @@ export async function POST(req: Request) {
   const seedsplit = presplit[1].split("###ENDSEEDCHAT###");
   const seedchat = seedsplit[0];
 
-  const companionKey = {
-    companionName: name!,
+  const botKey = {
+    botName: name!,
     modelName: "chatgpt",
     userId: clerkUserId,
   };
   const memoryManager = await MemoryManager.getInstance();
 
-  const records = await memoryManager.readLatestHistory(companionKey);
+  const records = await memoryManager.readLatestHistory(botKey);
   if (records.length === 0) {
-    await memoryManager.seedChatHistory(seedchat, "\n\n", companionKey);
+    await memoryManager.seedChatHistory(seedchat, "\n\n", botKey);
   }
 
-  await memoryManager.writeToHistory("Human: " + prompt + "\n", companionKey);
-  let recentChatHistory = await memoryManager.readLatestHistory(companionKey);
+  await memoryManager.writeToHistory("Human: " + prompt + "\n", botKey);
+  let recentChatHistory = await memoryManager.readLatestHistory(botKey);
 
   // query Pinecone
   const similarDocs = await memoryManager.vectorSearch(
     recentChatHistory,
-    companionFileName
+    botFileName
   );
 
   let relevantHistory = "";
@@ -143,7 +143,7 @@ export async function POST(req: Request) {
   console.log("result", result);
   const chatHistoryRecord = await memoryManager.writeToHistory(
     result!.text + "\n",
-    companionKey
+    botKey
   );
   console.log("chatHistoryRecord", chatHistoryRecord);
   if (isText) {
