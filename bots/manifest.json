@@ -1,8 +1,19 @@
 [
   {
     "name": "Radiance",
+    "botName": "Welcome Bot",
     "title": "Welcome Bot - The Welcome Bot's primary responsibility is to provide a warm and friendly greeting to shoppers and visitors as they enter the Mall",
     "imageUrl": "/welcomeBot.png",
+    "description": "The friendly AI that greets visitors to the Mall.",
+    "openingPrompt":"Welcome to [MALL_NAME]. Come follow me! You’re in for a treat. In the meanwhile, is there something specific I can tell you about?",
+    "tags": ["Greeter", "Concierge","Greeting", "Directions", "Recommendations"],
+    "import": [
+      "@/data/[MALL_SLUG]/general.md",
+      "@/data/[MALL_SLUG]/faq.md",
+      "@/data/[MALL_SLUG]/openingHours.md",
+      "@/data/[MALL_SLUG]/storeDirectory.md",
+      "@/data/[MALL_SLUG]/amenities.md"
+    ],
     "llm": "chatgpt"
   },
   {
